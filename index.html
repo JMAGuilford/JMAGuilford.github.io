@@ -7,40 +7,57 @@
 </head>
 
 <div class="wrapper" id="stickyWrapper">
-  <div class="top-spacer" id="topSpacer"></div>
-  <div class="center-hero" id="centerHero">
-    <h1 id="nameNav"><a href="/index.html" class="home-link">Cecilie Lind</a></h1>
-    <nav class="main-nav" id="mainNav"> 
-      <a href="#books" class="nav-link">Books</a>
-      &#8226;
-      <a href="#events" class="nav-link">Events</a>
-      &#8226;
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
+    <div class="top-spacer" id="topSpacer"></div>
+    <div class="center-hero" id="centerHero">
+      <h1 id="nameNav"><a href="/index.html" class="home-link">Cecilie Lind</a></h1>
+      <nav class="main-nav" id="mainNav"> 
+        <a href="#books" class="nav-link">Books</a>
+        &#8226;
+        <a href="#blog" class="nav-link">Blog</a>
+        &#8226;
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+    <div class="bottom-arrow" id="arrowNav" onclick="arrowFunction()">
+        <div class="down-arrow" id="downArrow">
+        </div>
+    </div>
+    <div id="mobileMenu"> 
+      <nav class="mobile-menu-nav">
+          <a href="#books" class="mobile-nav-link" onclick="return mobileNavClicked()">Books</a>
+          <a href="#blog" class="mobile-nav-link" onclick="return mobileNavClicked()">Blog</a>
+          <a href="#contact" class="mobile-nav-link" onclick="return mobileNavClicked()">Contact</a>
+      </nav>
+    </div>
   </div>
-  <div class="bottom-arrow" id="arrowNav" onclick="arrowFunction()">
-      <div class="down-arrow" id="downArrow">
-      </div>
-  </div>
-  <div id="mobileMenu"> 
-    <nav class="mobile-menu-nav">
-        <a href="#books" class="mobile-nav-link" onclick="return mobileNavClicked()">Books</a>
-        <a href="#events" class="mobile-nav-link" onclick="return mobileNavClicked()">Events</a>
-        <a href="#contact" class="mobile-nav-link" onclick="return mobileNavClicked()">Contact</a>
-    </nav>
-  </div>
-</div>
-
-<main class="scroll-container" id="scrollMain">
-  <section id="hero">
-  </section>
-  <section id="books">
-    <h2>Books</h2>
-  </section>
-  <section id="events">
-    <h2>Events</h2>
-  </section>
-  <section id="contact">
-    <h2>Contact</h2>
-  </section>
-</main>
+  
+  <main class="scroll-container" id="scrollMain">
+    <section id="hero">
+    </section>
+    <section id="books">
+        <div class="top-spacer" id="bookSpacer"></div>
+        <div class="book-hero">
+          <div class="book-image">
+            <img src="EnKat.jpeg" alt="What I really look like" height="auto">
+          </div>
+          <div class="book-blurb">
+            <div class="book-wrapper">
+              <h3 class="book-title">En Kat</h3>
+            </div>
+            <div class="book-talk">this is the book where it turns out i was a cat all along. i've just been putting meows into google translate</div>
+            <div class="book-wrapper">
+              <button class="hero-buy">BUY NOW</button>
+            </div>
+          </div>
+        </div> 
+        <div class="click-through">
+          <a class="click-through-link">See all books</a>
+        </div>
+    </section>
+    <section id="blog">
+      <h2>Blog</h2>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+    </section>
+  </main>

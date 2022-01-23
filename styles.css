@@ -25,25 +25,24 @@
   
   section {
     width: 100%;
-    display: inline-flex;
+    display: grid;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: 1fr auto 1fr;
     scroll-snap-align: center;
     scroll-snap-stop: always;
   }
   
   section, #stickyWrapper {
-    height: var(--rh);
+    min-height: var(--rh);
     padding: 1rem;
   }
   
   section:nth-child(2n) {
-    background-color: turquoise;
+    background-color: rgba(237,229,216,1);
   }
   
   section:nth-child(3n) {
-    background-color: tomato;
+    background-color: rgba(199,149,95,1);
   }
   
   h1 {
@@ -165,6 +164,7 @@
     scroll-snap-stop:normal;
     pointer-events: none;
     transition-property: all 0.75s ease-out;
+    box-shadow: 0px 1px 4px rgba(220, 220, 220, 0.25);
   }
   
   .nav-link, #arrowNav {
@@ -179,6 +179,7 @@
     background-color: rgba(220, 220, 220, 0.5);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    min-height: 0;
     height:auto;
   }
   
@@ -198,6 +199,50 @@
   #mobileMenu {
     display: none;
   }
+  
+  .section-title {
+    margin-top: auto;
+    padding-top: 5%;
+  }
+  
+  .book-hero {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .book-image img {
+    max-width: 365px;
+  }
+  
+  .book-blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .click-through {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-wrapper {
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    display: flex;
+  }
+  
+  h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+  }
+  
   
   @media only screen and (max-width: 888px) {
     .main-nav {
@@ -340,6 +385,35 @@
       margin: 0;
       padding: 0;
       list-style-type: none;
+    }
+  
+    .book-wrapper {
+      justify-content: center;
+    }
+  
+    .book-image {
+      margin: auto;
+    }
+  
+    .book-image img {
+      max-height: calc(var(--rh) * 0.5);
+    }
+  
+    .book-hero {
+      flex-direction: column;
+    }
+  
+    h3 {
+      margin-block-start: 1.5rem;
+      margin-block-end: 1rem;
+    }
+  
+    .book-talk {
+      padding-bottom: 1rem;
+    }
+  
+    #bookSpacer {
+      min-height: calc(var(--rem) * 5);
     }
   }
   
