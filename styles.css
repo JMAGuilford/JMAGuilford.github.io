@@ -124,8 +124,7 @@
     background: white;
     transform: rotate(45deg);
     transform-origin: 0% 0%;
-    transition: transform .25s ease-in-out;
-    transition: width .25s ease-in-out;
+    transition: transform .25s ease-in-out, width .25s ease-in-out;
     border-radius: 5px;
   }
   
@@ -140,8 +139,7 @@
     background: white;
     transform: rotate(-90deg);
     transform-origin: 0% 100%;
-    transition: transform .25s ease-in-out;
-    transition: width .25s ease-in-out;
+    transition: transform .25s ease-in-out, width .25s ease-in-out;
   }
   
   @keyframes bounce {
