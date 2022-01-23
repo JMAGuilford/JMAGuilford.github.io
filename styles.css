@@ -5,7 +5,7 @@
   body {
     margin: 0;
     font-family: 'Helvetica', sans-serif;
-    background: url("/scratchpad/HeroPage/cecilie_color.jpg") no-repeat center center;
+    background: url("/images/cecilie_color.jpg") no-repeat center center;
     background-size: cover;
     overflow: hidden;
   }
