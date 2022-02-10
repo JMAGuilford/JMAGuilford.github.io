@@ -3,61 +3,62 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/Images/favicon_180x180_lg.png">
     <script src="/scripts.js"></script>
 </head>
 
 <div class="wrapper" id="stickyWrapper">
-    <div class="top-spacer" id="topSpacer"></div>
-    <div class="center-hero" id="centerHero">
-      <h1 id="nameNav"><a href="/index.html" class="home-link">Cecilie Lind</a></h1>
-      <nav class="main-nav" id="mainNav"> 
-        <a href="#books" class="nav-link">Books</a>
-        &#8226;
-        <a href="#blog" class="nav-link">Blog</a>
-        &#8226;
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-    </div>
-    <div class="bottom-arrow" id="arrowNav" onclick="arrowFunction()">
-        <div class="down-arrow" id="downArrow">
-        </div>
-    </div>
-    <div id="mobileMenu"> 
-      <nav class="mobile-menu-nav">
-          <a href="#books" class="mobile-nav-link" onclick="return mobileNavClicked()">Books</a>
-          <a href="#blog" class="mobile-nav-link" onclick="return mobileNavClicked()">Blog</a>
-          <a href="#contact" class="mobile-nav-link" onclick="return mobileNavClicked()">Contact</a>
-      </nav>
-    </div>
+  <div class="top-spacer" id="topSpacer"></div>
+  <div class="center-hero" id="centerHero">
+    <h1 id="nameNav"><a href="/index.html" class="home-link" id="homeLink">Cecilie<span id="breaker"></span>Lind</a></h1>
+    <nav class="main-nav" id="mainNav"> 
+      <a href="#boger" class="nav-link">B&oslash;ger</a>
+      &#8226;
+      <a href="#om" class="nav-link">Om</a>
+      &#8226;
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
   </div>
-  
-  <main class="scroll-container" id="scrollMain">
-    <section id="hero">
-    </section>
-    <section id="books">
-        <div class="top-spacer" id="bookSpacer"></div>
-        <div class="book-hero">
-          <div class="book-image">
-            <img src="/images/EnKat.jpeg" alt="What I really look like" height="auto">
-          </div>
-          <div class="book-blurb">
-            <div class="book-wrapper">
-              <h3 class="book-title">En Kat</h3>
-            </div>
-            <div class="book-talk">this is the book where it turns out i was a cat all along. i've just been putting meows into google translate</div>
-            <div class="book-wrapper">
-              <button class="hero-buy">BUY NOW</button>
-            </div>
-          </div>
-        </div> 
-        <div class="click-through">
-          <a class="click-through-link">See all books</a>
+  <div class="bottom-arrow" id="arrowNav" onclick="arrowFunction()">
+      <div class="down-arrow" id="downArrow">
+      </div>
+  </div>
+  <div id="mobileMenu"> 
+    <nav class="mobile-menu-nav">
+        <a href="#boger" class="mobile-nav-link" onclick="return mobileNavClicked()">B&oslash;ger</a>
+        <a href="#om" class="mobile-nav-link" onclick="return mobileNavClicked()">Om</a>
+        <a href="#kontakt" class="mobile-nav-link" onclick="return mobileNavClicked()">Kontakt</a>
+    </nav>
+  </div>
+</div>
+
+<main class="scroll-container" id="scrollMain">
+  <section id="hero">
+  </section>
+  <section id="boger">
+      <div class="top-spacer" id="bookSpacer"></div>
+      <div class="book-hero">
+        <div class="book-image">
+          <img src="/Books/pigedyr.png" alt="Cecilie Lind - Pigedyr" height="auto">
         </div>
-    </section>
-    <section id="blog">
-      <h2>Blog</h2>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-    </section>
-  </main>
+        <div class="book-blurb">
+          <div class="book-wrapper">
+            <h3 class="book-title">En Kat</h3>
+          </div>
+          <div class="book-talk">this is the book where it turns out i was a cat all along. i've just been putting meows into google translate</div>
+          <div class="book-wrapper">
+            <button class="hero-buy">BUY NOW</button>
+          </div> 
+        </div>
+      </div> 
+      <div class="click-through">
+        <a class="click-through-link" href="/books.html">Alle B&oslash;ger &rarr;</a>
+      </div>
+  </section>
+  <section id="om">
+    <h2>Blog</h2>
+  </section>
+  <section id="kontakt">
+    <h2>Contact</h2>
+  </section>
+</main>

@@ -1,4 +1,5 @@
 var realHeight;
+var scrollSwitches = true;
 
 function getHeight() {
     realHeight = window.innerHeight;
@@ -15,10 +16,10 @@ var mobileMenuShowing = false;
 
 function arrowFunction() {
     let deviceWidth = window.innerWidth;
-    let scrollable = document.getElementById("scrollMain");
-    if (deviceWidth > 888) {
-        document.querySelector("#books").scrollIntoView({ behavior: 'smooth' });
-    } else {
+
+    if (deviceWidth > 888 || !document.getElementById("downArrow").classList.contains("is-shrunken-nav")) { 
+        document.querySelector("#boger").scrollIntoView({ behavior: 'smooth' });
+     } else {
         if (!mobileMenuShowing) {
             document.getElementById("downArrow").classList.add("is-x");
             document.getElementById("arrowNav").classList.add("is-x");
@@ -36,7 +37,7 @@ function arrowFunction() {
 
             mobileMenuShowing = false;
         }
-    }
+    } 
 }
 
 
@@ -83,28 +84,32 @@ document.onreadystatechange = () => {
             document.getElementById("arrowNav").classList.add("is-shrunken-nav");
             document.getElementById("downArrow").classList.add("is-shrunken-nav");
             document.getElementById("mainNav").classList.add("is-shrunken-nav");
+            document.getElementById("breaker").classList.add("is-shrunken-nav");
         }
 
-        if (scrollable.scrollTop > (realHeight * 0.5)) {
-            shrinkNav();
-        }
-        
-        scrollable.onscroll = function() {
-            let element = document.getElementById("stickyWrapper");
-            if (scrollable.scrollTop > (realHeight * 0.5)) {
-                if (!element.classList.contains("is-shrunken-nav")) {
-                    console.log("FIRE!");
-                    shrinkNav();
-                }
-            } else {
-                if (element.classList.contains("is-shrunken-nav")) {
-                    document.getElementById("stickyWrapper").classList.remove("is-shrunken-nav");
-                    document.getElementById("topSpacer").classList.remove("is-shrunken-nav");
-                    document.getElementById("centerHero").classList.remove("is-shrunken-nav");
-                    document.getElementById("nameNav").classList.remove("is-shrunken-nav");
-                    document.getElementById("arrowNav").classList.remove("is-shrunken-nav");
-                    document.getElementById("downArrow").classList.remove("is-shrunken-nav");
-                    document.getElementById("mainNav").classList.remove("is-shrunken-nav");
+        if(scrollSwitches) {
+            if (scrollable.scrollTop > (realHeight * 0.1)) {
+                shrinkNav();
+            }
+            
+            scrollable.onscroll = function() {
+                let element = document.getElementById("stickyWrapper");
+                if (scrollable.scrollTop > (realHeight * 0.01)) {
+                    if (!element.classList.contains("is-shrunken-nav")) {
+                        console.log("FIRE!");
+                        shrinkNav();
+                    }
+                } else {
+                    if (element.classList.contains("is-shrunken-nav")) {
+                        document.getElementById("stickyWrapper").classList.remove("is-shrunken-nav");
+                        document.getElementById("topSpacer").classList.remove("is-shrunken-nav");
+                        document.getElementById("centerHero").classList.remove("is-shrunken-nav");
+                        document.getElementById("nameNav").classList.remove("is-shrunken-nav");
+                        document.getElementById("arrowNav").classList.remove("is-shrunken-nav");
+                        document.getElementById("downArrow").classList.remove("is-shrunken-nav");
+                        document.getElementById("mainNav").classList.remove("is-shrunken-nav");
+                        document.getElementById("breaker").classList.remove("is-shrunken-nav");
+                    }
                 }
             }
         }
