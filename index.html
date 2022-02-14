@@ -3,43 +3,65 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    <link rel="icon" type="image/x-icon" href="/Images/favicon_180x180_lg.png">
+    <link rel="icon" type="image/x-icon" href="/favicon_180x180_lg.png">
     <script src="/scripts.js"></script>
 </head>
 
-<div class="wrapper" id="stickyWrapper">
-  <div class="top-spacer" id="topSpacer"></div>
-  <div class="center-hero" id="centerHero">
-    <h1 id="nameNav"><a href="/index.html" class="home-link" id="homeLink">Cecilie<span id="breaker"></span>Lind</a></h1>
-    <nav class="main-nav" id="mainNav"> 
-      <a href="#boger" class="nav-link">B&oslash;ger</a>
+<div class="wrapper is-shrunken-nav absolute hidden" id="stickyWrapper">
+  <div class="top-spacer is-shrunken-nav"></div>
+  <div class="center-hero is-shrunken-nav">
+      <h1 class="is-shrunken-nav" class="name-nav"><a href="/index.html" class="home-link">Cecilie Lind</a></h1>
+      <nav class="main-nav is-shrunken-nav"> 
+      <a href="/index.html#boger" class="nav-link">B&oslash;ger</a>
       &#8226;
-      <a href="#om" class="nav-link">Om</a>
+      <a href="/index.html#om" class="nav-link">Om</a>
       &#8226;
-      <a href="#kontakt" class="nav-link">Kontakt</a>
-    </nav>
+      <a href="/index.html#kontakt" class="nav-link">Kontakt</a>
+      </nav>
   </div>
-  <div class="bottom-arrow" id="arrowNav" onclick="arrowFunction()">
-      <div class="down-arrow" id="downArrow">
+  <div class="bottom-arrow is-shrunken-nav" id="arrowNav" onclick="arrowFunction()">
+      <div class="down-arrow is-shrunken-nav" id="downArrow">
       </div>
   </div>
-  <div id="mobileMenu"> 
-    <nav class="mobile-menu-nav">
-        <a href="#boger" class="mobile-nav-link" onclick="return mobileNavClicked()">B&oslash;ger</a>
-        <a href="#om" class="mobile-nav-link" onclick="return mobileNavClicked()">Om</a>
-        <a href="#kontakt" class="mobile-nav-link" onclick="return mobileNavClicked()">Kontakt</a>
-    </nav>
+  <div class="is-shrunken-nav" id="mobileMenu"> 
+      <nav class="mobile-menu-nav is-shrunken-nav">
+          <a href="/index.html#boger" class="mobile-nav-link is-shrunken-nav">B&oslash;ger</a>
+          <a href="/index.html#om" class="mobile-nav-link is-shrunken-nav">Om</a>
+          <a href="/index.html#kontakt" class="mobile-nav-link is-shrunken-nav">Kontakt</a>
+      </nav>
   </div>
 </div>
 
 <main class="scroll-container" id="scrollMain">
   <section id="hero">
+    <div class="wrapper bottom">
+      <div class="top-spacer"></div>
+      <div class="center-hero">
+        <div class="left-spacer"></div>
+        <div class="hero-right">
+          <div class="hero-header">
+            <h1 class="name-nav iphone-black"><a href="/index.html" class="home-link">Cecilie<span id="breaker"></span>Lind</a></h1>
+            <nav class="main-nav iphone-black"> 
+              <a href="#boger" class="nav-link">B&oslash;ger</a>
+              &#8226;
+              <a href="#om" class="nav-link">Om</a>
+              &#8226;
+              <a href="#kontakt" class="nav-link">Kontakt</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <a class="bottom-arrow" href="#boger">
+        <div class="down-arrow">
+        </div>
+      </a>
+    </div>
   </section>
   <section id="boger">
       <div class="top-spacer" id="bookSpacer"></div>
       <div class="book-hero">
-        <div class="book-image">
-          <img src="/Books/pigedyr.png" alt="Cecilie Lind - Pigedyr" height="auto">
+        <div class="book-image resize">
+          <img src="/Books/pigedyr_render_transparent.png" alt="Cecilie Lind - Pigedyr" height="auto">
         </div>
         <div class="book-blurb">
           <div class="book-wrapper">
@@ -52,13 +74,19 @@
         </div>
       </div> 
       <div class="click-through">
-        <a class="click-through-link" href="/books.html">Alle B&oslash;ger &rarr;</a>
+        <a class="click-through-link" href="/boger.html">Alle B&oslash;ger &rarr;</a>
       </div>
   </section>
   <section id="om">
-    <h2>Blog</h2>
+    <div class="flex justify-center min-size"><h3 class="lower">Om</h3></div>
+    <div class="flex"><div class="middle side-padding">Cecilie Lind er en dansk forfatter, bor i København, født i Haderslev i 1991. Hun er opvokset i Haderslev og Ringkøbing. Hun gik på Forfatterskolen i København fra 2011 til 2013 og debuterede i poesitiddskiftet Hvedekorn i 2008. Hendes første bog var digtsamlingen Ulven åd min eyeliner, der udkom på forlaget OVBIDAT i 2010. Siden har hun skrevet både poesi og prosa, såvel langdigte som kortprosa som romaner, og alt i alt følgende bøger: Dughærget pupil accelererer tusmørke (Samleren 2012), Strunk (Gladiator, 2015), Scarykost (OVBIDAT, 2016), Til en engels forsvar (Gladiator, 2017), Ragsua (Kronstork, 018), Mit barn (Gyldendal, 2019), Den nye spejltrådskaserne (Escho, 2020), Pigedyr (Gyldendal, 2022). Cecilie har skrevet debatindlæg og kronikker, undervist i skrivekunst og læser jævnligt op af sine værker. Hun modtog i 2021 Modersmålsprisen, i 2020 blev Mit barn nomineret til både Kritikerprisen og Politikens Litteraturpris.</div></div>
+    <div></div>
   </section>
   <section id="kontakt">
-    <h2>Contact</h2>
+    <div class="flex justify-center min-size"><h3 class="lower">Kontakt</h3></div>
+    <div class="flex"><div class="middle side-padding">Cecilie Lind deltager i oplæsninger, foredrag undervisning og interviews. For  mere information, booking og alle andre henvendelser, kontakt venligst:
+      </br></br>
+      <a href="mailto:cecilielind@live.dk">Cecilielind@live.dk</a>
+    </div></div>
   </section>
 </main>
