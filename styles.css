@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   font-family: 'Helvetica', sans-serif;
-  background: url("/scratchpad/HeroPage/Images/photo_white.png") no-repeat 15% bottom;
+  background: url("/Images/photo_white.png") no-repeat 15% bottom;
   background-size: clamp(30%, 65vh, 625px);
   overflow: hidden;
 }
