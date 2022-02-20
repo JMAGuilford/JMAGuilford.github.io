@@ -1,6 +1,7 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
 <header class="wrapper is-shrunken-nav {{include.wrapperclasses}}" id="stickyWrapper">
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
   <div class="top-spacer is-shrunken-nav"></div>
   <div class="center-hero is-shrunken-nav">
     <h1 class="is-shrunken-nav name-nav"><a href="{{ site.url }}" class="home-link">{{ site.author }}</a></h1>
@@ -14,7 +15,7 @@
             <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
           {%- else -%}
             {%- capture down_link -%}/#{{my_page.title | escape}}{%- endcapture -%}
-            <a class="nav-link" href="{{ site.url | append: down_link }}">{{ my_page.title | escape }}</a>
+            <a class="nav-link" href="{{ site.url | append: down_link | downcase }}">{{ my_page.title | escape }}</a>
           {%- endif -%}
           {%- if iterator < page_paths.size -%}
             &nbsp; &#8226; &nbsp;

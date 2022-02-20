@@ -23,6 +23,11 @@
     display: block;
     padding: 0 0 0 0;
   }
+
+  .center-block {
+    width: 100%;
+    text-align: center;
+  }
   
   .hidden {
     display: none !important;
@@ -73,7 +78,7 @@
     z-index: 0 !important;
   }
   
-  #boger, #om, #kontakt {
+  #promotion, #om, #kontakt {
     isolation: isolate;
   }
   
@@ -401,7 +406,7 @@
     padding-left: 2vw;
   }
   
-  #boger {
+  #promotion {
     box-shadow: 0px -1px 3px gray;
   }
   
@@ -426,6 +431,7 @@
   .middle {
     margin-top: auto;
     margin-bottom: auto;
+    width: 100%;
   }
   
   .lower {
@@ -654,7 +660,7 @@
       list-style-type: none;
     }
   
-    #boger {
+    #promotion {
       grid-template-rows: 1fr 6fr;
     }
   
