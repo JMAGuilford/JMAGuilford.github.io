@@ -44,16 +44,18 @@ collections:
   boeger:
     output: true
     permalink: /:collection/:path/
-    order:
-      - pigedyr.markdown
-      - den_nye_spejltraadskaserne.markdown
-      - mit_barn.markdown
-      - ragusa.markdown
-      - til_en_engels_forsvar.markdown
-      - scarykost.markdown
-      - strunk.markdown
-      - dughaerget_pupil_accelererer_tusmoerke.markdown
-      - ulven_aad_min_eyeliner.markdown
+    sort_by: year
+    
+    #order:
+    #  - pigedyr.markdown
+    #  - den_nye_spejltraadskaserne.markdown
+    #  - mit_barn.markdown
+    #  - ragusa.markdown
+    #  - til_en_engels_forsvar.markdown
+    #  - scarykost.markdown
+    #  - strunk.markdown
+    #  - dughaerget_pupil_accelererer_tusmoerke.markdown
+    #  - ulven_aad_min_eyeliner.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
