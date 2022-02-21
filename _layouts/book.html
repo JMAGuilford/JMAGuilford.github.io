@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="no-bg">
+
+    <main class="book-list">
+        {%- include header.html wrapperclasses = "sticky" -%}
+
+        <div class="book-hero top-padding">
+            <div class="book-image">
+              <img src="{{ page.cover | relative_url }}" alt="Cecilie Lind - {{ page.title }}" height="auto">
+            </div>
+            <div class="book-blurb">
+              <div class="book-wrapper">
+                <h3 class="book-title">{{ page.title }}</h3>
+              </div>
+              <div class="book-talk">{{ page.title }}</br>
+                {{ page.type }}</br>
+                {{ page.publisher }}</br>
+                {{ page.year }}</br></br>
+                {{ content | markdownify }}
+              </div>
+              {%- include buy-link.html buylink = page.buy -%}
+            </div>
+          </div> 
+    </main>
+
+  </body>
+
+</html>

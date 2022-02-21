@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: book-list
 title: Bøger
 permalink: /boger/
 ---

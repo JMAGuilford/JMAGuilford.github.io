@@ -1,7 +1,7 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-<header class="wrapper is-shrunken-nav {{include.wrapperclasses}}" id="stickyWrapper">
+<header class="wrapper is-shrunken-nav {{ include.wrapperclasses }}" id="stickyWrapper">
   <div class="top-spacer is-shrunken-nav"></div>
   <div class="center-hero is-shrunken-nav">
     <h1 class="is-shrunken-nav name-nav"><a href="{{ site.url }}" class="home-link">{{ site.author }}</a></h1>

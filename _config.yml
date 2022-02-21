@@ -35,9 +35,16 @@ plugins:
 
 # Set header pages
 header_pages: 
-  - boger.markdown
+  - boeger.markdown
   - om.markdown
   - kontakt.markdown
+
+# Collections
+collections:
+  boeger:
+    output: true
+    permalink: /:collection/:path/
+    sort_by: year
 
 # Exclude from processing.
 # The following items will not be processed, by default.
