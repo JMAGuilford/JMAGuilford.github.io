@@ -1,7 +1,5 @@
 ---
 layout: book-list
 title: Bøger
-permalink: /boger/
+permalink: /boeger/
 ---
-
-Here da books
