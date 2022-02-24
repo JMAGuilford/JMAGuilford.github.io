@@ -4,7 +4,7 @@ title: Dughærget pupil accelererer tusmørke
 type: Poesi
 publisher: Samleren
 year: 2012
-cover: /assets/covers/dughaerget_pupil_accelererer_tusmoerke.jpg
+cover: /assets/covers/dughaerget_pupil_accelererer_tusmoerke.png
 buy: https://www.saxo.com/dk/dughaerget-pupil-accelererer-tusmoerke_cecilie-lind_haeftet_9788763824682
 ---
 

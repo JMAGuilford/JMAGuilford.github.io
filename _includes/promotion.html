@@ -1,20 +1,22 @@
 <section id="promotion">
-    <div class="top-spacer" id="bookSpacer"></div>
-    <div class="book-hero">
-      <div class="book-image resize">
-        <img src="{{ "/assets/pigedyr_render_transparent.png" | relative_url }}" alt="Cecilie Lind - Pigedyr" height="auto">
+  <div class="section-horizontal-flex" >
+    <div class="hero-grid-left">
+      <div></div>
+      <div class="hero-grid-pane left">
+        <img class="book-hero" src="{{ "/assets/pigedyr_render_transparent.png" | relative_url }}" alt="Cecilie Lind - Pigedyr" height="auto">
       </div>
-      <div class="book-blurb">
-        <div class="book-wrapper">
-          <h3 class="book-title">En Kat</h3>
-        </div>
-        <div class="book-talk">this is the book where it turns out i was a cat all along. i've just been putting meows into google translate</div>
-        <div class="book-wrapper">
-          <button class="hero-buy">BUY NOW</button>
-        </div> 
-      </div>
-    </div> 
-    <div class="click-through">
-      <a class="click-through-link" href="{{ site.url | append: "/boeger" }}">Alle B&oslash;ger &rarr;</a>
+      <div></div>
     </div>
+    <div class="hero-grid-right">
+      <div></div>
+      <div class="hero-grid-pane">
+        <h2>En Kat</h2>
+        <p>this is the book where it turns out i was a cat all along. i've just been putting meows into google translate</p>
+        <button class="hero-buy">BUY NOW</button>
+      </div>
+      <div class="click-through">
+        <h3><a class="click-through-link" href="{{ site.url | append: "/boeger" }}">Alle B&oslash;ger &rarr;</a></h3>
+      </div>
+    </div>
+  </div>
 </section>

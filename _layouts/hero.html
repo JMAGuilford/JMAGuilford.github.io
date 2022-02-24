@@ -3,12 +3,12 @@
 
   {%- include head.html -%}
 
-  {%- include header.html wrapperclasses = "absolute hidden" -%}
+  {%- include header.html wrapperclasses = "hidden" -%}
 
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-  <body>
+  <body class="no-overflow">
 
     <main class="scroll-container" id="scrollMain">
       {%- include hero-section.html -%}
@@ -23,8 +23,10 @@
               {%- continue -%}
             {%- else -%}
               <section id="{{my_page.title | downcase}}">
-                <div class="flex justify-center min-size"><h3 class="lower">{{my_page.title}}</h3></div>
-                <div class="flex"><div class="middle side-padding">{{my_page.content}}</div></div>
+                <div class="section-vertical-flex">
+                  <h2>{{my_page.title}}</h2>
+                  <div class="section-content">{{my_page.content}}</div>
+                </div>
               </section>
               {%- assign iterator = iterator | plus: 1 -%}
             {%- endif -%}

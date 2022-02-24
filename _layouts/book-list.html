@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body class="no-bg">
+  <body>
 
     <main class="book-list">
         {%- include header.html wrapperclasses = "sticky" -%}
@@ -13,7 +13,7 @@
           {%- for book in books reversed -%}
               <div class="book-box">
                   <div class="book-list-image"><a link="book-image-link" href="{{ book.url }}"><img class="book-list-hero" src="{{ book.cover }}"></a></div>
-                  <div class="book-list-title"><a class="click-through-link no-padding no-shrink-list" href="{{ book.url }}">{{ book.title }}</a></div>
+                  <div class="book-list-title"><h4><a class="book-click-through" href="{{ book.url }}">{{ book.title }}</a></h4></div>
               </div>
           {%- endfor -%}
         </div>

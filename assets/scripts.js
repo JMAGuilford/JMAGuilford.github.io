@@ -14,10 +14,11 @@ window.addEventListener('resize', () => {
 
 var mobileMenuShowing = false;
 
-function arrowFunction() {
+function hamburgerFunction() {
     if (!mobileMenuShowing) {
-        document.getElementById("downArrow").classList.add("is-x");
-        document.getElementById("arrowNav").classList.add("is-x");
+        console.log("SHOWING MENU");
+
+        document.getElementById("menu").classList.add("is-x");
         document.getElementById("mobileMenu").classList.add("is-displayed");
 
         if(document.getElementById("mobileMenu").classList.contains("fade-out-time")) {
@@ -25,18 +26,20 @@ function arrowFunction() {
         }
 
         mobileMenuShowing = true;
+        console.log("MENU SHOWING BOOL: " + mobileMenuShowing);
     } else {
-        document.getElementById("downArrow").classList.remove("is-x");
-        document.getElementById("arrowNav").classList.remove("is-x");
+        console.log("HIDING MENU");
+
+        document.getElementById("menu").classList.remove("is-x");
         document.getElementById("mobileMenu").classList.add("fade-out-time");
 
         mobileMenuShowing = false;
+        console.log("MENU SHOWING BOOL: " + mobileMenuShowing);
     }
 }
 
 function mobileNavClicked() {
-    document.getElementById("downArrow").classList.remove("is-x");
-    document.getElementById("arrowNav").classList.remove("is-x");
+    document.getElementById("menu").classList.remove("is-x");
     document.getElementById("mobileMenu").classList.add("fade-out-time");
 
     mobileMenuShowing = false;
@@ -60,15 +63,12 @@ if (e.animationName === 'fade-out') {
 
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
-        console.log("DOCUMENT READY");
-        console.log(realHeight);
 
         let rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-        console.log(rem);
         document.documentElement.style.setProperty('--rem', `${rem}px`);
 
         let scrollable = document.getElementById("scrollMain");
-        let element = document.getElementById("stickyWrapper");
+        let element = document.getElementById("stickyHeader");
 
         if(scrollSwitches) {
             if (scrollable.scrollTop > (realHeight * 0.5)) {

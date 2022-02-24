@@ -1,0 +1,235 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+h3 {
+  @include media-query($on-palm) {
+    margin-bottom: auto;
+  }
+}
+
+
+
+/**
+ * `main` element
+ */
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+nav {
+  list-style-type: none;
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight * 2;
+}
+
+h1 {
+  font-size: 8rem;
+
+  @include media-query($on-palm) {
+    font-size: 12vmin;
+    padding-top: $spacing-unit;
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $accent-color;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color;
+  transition-duration: $transition-time;
+  transition-timing-function: ease-out;
+
+  &:visited {
+    color: $accent-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+    text-decoration-color: $accent-color;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+.main-nav a, .click-through-link {
+  color: $text-color !important;
+}
+
+header, header a {
+  color: $float-text-color !important;
+  text-shadow: 2px 2px 0px $text-color;
+}
+
+
+/**
+ * Section styling
+ */
+header {
+  background-color: $float-background-color;
+  box-shadow: 0px 1px 4px $float-background-color;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition-property: opacity;
+  transition-duration: $transition-time;
+  transition-timing-function: ease-out;
+}
+
+section:nth-child(2n) {
+  background-color: $section-background-color;
+}
+
+section:nth-child(3n) {
+  background-color: $section-background-color-alternate;
+}
+
+.main-nav {
+  font-size: $base-font-size * 1.5;
+}
+
+.main-nav, .header-nav-desktop {
+  font-weight: $base-font-weight * 1.5;
+}
+
+.menu-nav-mobile {
+  background-color: $menu-background-color;
+}
+
+
+
+/**
+ * Mobile menu and button
+ */
+ .menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  z-index: 4;
+}
+
+.line, .sline {
+  fill: none;
+  stroke-width: 6;
+  transition: all 0.5s ease-in-out;
+}
+
+.line {
+  stroke: white;
+}
+
+.sline {
+  stroke: black;
+}
+
+.line1, .line3, .sline1, .sline3 {
+  stroke-dasharray: 29.5 1000;
+}
+
+.opened .line1, .opened .line3, .opened .sline1, .opened .sline3 {
+  stroke-dasharray: 0.000001 29.9999999, 1000;
+}
+
+.opened .line2, .opened .sline2 {
+  stroke: none;
+}
+
+.mobile-nav {
+  line-height: $base-line-height * 1.5;
+}
