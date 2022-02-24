@@ -280,6 +280,13 @@ h1, .main-nav {
   }
 }
 
+.hero-buy {
+  margin-top: $spacing-unit;
+  @include media-query($on-palm) {
+    margin-top: 0;
+  }
+}
+
 .click-through {
   display: flex;
   flex-direction: column;
