@@ -16,8 +16,6 @@ var mobileMenuShowing = false;
 
 function hamburgerFunction() {
     if (!mobileMenuShowing) {
-        console.log("SHOWING MENU");
-
         document.getElementById("mobileMenu").classList.add("is-displayed");
 
         if(document.getElementById("mobileMenu").classList.contains("fade-out-time")) {
@@ -25,15 +23,11 @@ function hamburgerFunction() {
         }
 
         mobileMenuShowing = true;
-        console.log("MENU SHOWING BOOL: " + mobileMenuShowing);
     } else {
-        console.log("HIDING MENU");
-
         document.getElementById("menu").classList.remove("opened");
         document.getElementById("mobileMenu").classList.add("fade-out-time");
 
         mobileMenuShowing = false;
-        console.log("MENU SHOWING BOOL: " + mobileMenuShowing);
     }
 }
 
