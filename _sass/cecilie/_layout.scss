@@ -467,11 +467,14 @@ h4 {
   .hero-grid-left, .hero-grid-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .hero-grid-left {
     align-items: flex-end;
+  }
+
+  .hero-grid-right {
+    justify-content: center;
   }
 
   @include media-query($on-palm) {
