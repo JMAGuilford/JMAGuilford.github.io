@@ -12,13 +12,16 @@ buy: https://www.escho.net/shop/cecilie-lind-den-nye-spejltrdskaserne
 
 <p class="red">&hearts;&hearts;&hearts;&hearts;&hearts;</p>
 “Linds sproghengivne frie associationer bringer nyt liv i gamle klude: faste talemåder, eventyr og folkeviser, døde metaforer, stumper af salmer og digte. Det er digterisk kunst med kraft til at bringe alt stivnet i skred, ikke mindst stivnede myter, stivnede kvindebilleder”
---<i><a href="https://politiken.dk/kultur/boger/art7835568/»Kildret-frem-til-barm-var-mit-sejrsstolte-bryst" target="_blank" rel="noopener noreferrer">Politiken</a> (Lilian Munk Rösing)</i>
+
+<p class="review-attribution">—<i>Lilian Munk Rösing, <a href="https://politiken.dk/kultur/boger/art7835568/»Kildret-frem-til-barm-var-mit-sejrsstolte-bryst" target="_blank" rel="noopener noreferrer">Politiken</a></i></p>
   
 
 <p class="black">&starf;&starf;&starf;&starf;&starf;</p>
 “Form og indhold spiller således fornemt sammen: Når livet er kaotisk, uhåndterligt og i syv sind, så må litteraturen også være det. Det lykkes imidlertid kun, fordi Lind er en særdeles dygtig og særegen sprogkunstner, der samtidig har blik for menneskelivets eksistentielle tyngdepunkter.”
---<i><a href="https://www.kristeligt-dagblad.dk/kultur/hun-taler-solen-i-saenk-og-maanen-i-ekstase" target="_blank" rel="noopener noreferrer">Kristeligt Dagblad</a> (Martin Rohr Gregersen)</i>  
+
+<p class="review-attribution">—<i>Martin Rohr Gregersen, <a href="https://www.kristeligt-dagblad.dk/kultur/hun-taler-solen-i-saenk-og-maanen-i-ekstase" target="_blank" rel="noopener noreferrer">Kristeligt Dagblad</a></i></p>
   
   
 “Det er som altid ret kompromisløst. Er det godt? Ja, ja, det tror jeg.”
---<i>Weekendavisen (Nicklas Freisleben Lund)</i>
+
+<p class="review-attribution">—<i>Nicklas Freisleben Lund, Weekendavisen</i></p>

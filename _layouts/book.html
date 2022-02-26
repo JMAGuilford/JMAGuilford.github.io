@@ -21,9 +21,8 @@
           <div class="hero-grid-pane">
             <h3 class="book-title">{{ page.title }}</h3>
             <div class="book-talk">
-              {{ page.type }}</br>
-              {{ page.publisher }}</br>
-              {{ page.year }}</br></br>
+              {{ page.publisher }}, {{ page.year }}</br>
+              {{ page.type }}</br></br></br>
               {{ content }}
             </div>
             {%- include buy-link.html buylink = page.buy -%}
