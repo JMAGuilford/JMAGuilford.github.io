@@ -1,6 +1,8 @@
 ---
 layout: book
 title: Mit barn
+sectiontitle: Bøger
+subsectiontitle: Mit barn
 type: Langdigt
 publisher: Gyldendal
 year: 2019
@@ -8,9 +10,11 @@ cover: /assets/covers/mit_barn.jpeg
 buy: https://www.gyldendal.dk/forfattere/cecilie-lind-f128777
 ---
 
+<p class="red">&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;</p>
 “Langdigt om moderskab er suverænt (…) Digteren Cecilie Linds altid svimle sværmende sprog finder stof i “Mit barn”, som måske er hendes bedste digt nogensinde”
 --<i><a href="https://politiken.dk/kultur/boger/art7390276/Mælkegælden-stikker-sit-ansigt-frem-og-spreder-kvalme-og-skyld-i-suveræn-bog-om-moderskabet" target="_blank" rel="noopener noreferrer">Politiken</a> (Benedicte Gui De Thurah Huang)</i>
 
+<p class="black">&starf;&starf;&starf;&starf;&starf;&starf;</p>
 “Cecilie Lind skriver sig med sin nye bog, langdigtet ”Mit barn” direkte ind i læseren med sit præcise og menneskelige portræt af moderskabet.”
 --<i><a href="https://www.kristeligt-dagblad.dk/kultur/smukt-og-ubaerligt-langdigt-om-det-vidunderligste-og-skraekkeligste-af-alt" target="_blank" rel="noopener noreferrer">Kristeligt Dagblad</a> (Martin Gregersen)</i>
 

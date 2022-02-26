@@ -1,6 +1,8 @@
 ---
 layout: book
 title: Pigedyr
+sectiontitle: Bøger
+subsectiontitle: Pigedyr
 type: Roman
 publisher: Gyldendal
 year: 2022

@@ -1,10 +1,13 @@
 ---
 layout: book
 title: Strunk
+sectiontitle: Bøger
+subsectiontitle: Strunk
 type: Langdigt
 publisher: Gladiator
 year: 2015
 cover: /assets/covers/strunk.jpg
+coverborder: 1
 buy: https://forlagetgladiator.dk/collections/boger/products/strunk?_pos=2&_fid=5fc6cf147&_ss=c
 ---
 

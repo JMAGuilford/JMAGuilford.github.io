@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "dk" }}">
 
   {%- include head.html -%}
 
@@ -10,29 +10,8 @@
 
   <body class="no-overflow bg">
 
-    <main class="scroll-container" id="scrollMain">
+    <main class="scroll-container">
       {%- include hero-section.html -%}
-      {%- include promotion.html -%}
-      {%- if page_paths -%}
-        {%- assign iterator = 1 -%}
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-            {%- if iterator == 1 -%}
-              {%- assign iterator = iterator | plus: 1 -%}
-              {%- continue -%}
-            {%- else -%}
-              <section id="{{my_page.title | downcase}}">
-                <div class="section-vertical-flex">
-                  <h2>{{my_page.title}}</h2>
-                  <div class="section-content">{{my_page.content}}</div>
-                </div>
-              </section>
-              {%- assign iterator = iterator | plus: 1 -%}
-            {%- endif -%}
-          {%- endif -%}
-        {%- endfor -%}
-      {%- endif -%}
     </main>
 
   </body>

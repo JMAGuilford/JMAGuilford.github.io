@@ -1,10 +1,12 @@
 ---
 layout: book
 title: Ulven åd min eyeliner
+sectiontitle: Bøger
+subsectiontitle: Ulven åd min eyeliner
 type: Poesi
 publisher: OVBIDAT
 year: 2010
-cover: /assets/covers/ulven_aad_min_eyeliner.jpg
+cover: /assets/covers/ulven_aad_min_eyeliner.jpeg
 buy: https://ovbidat.cargo.site
 ---
 

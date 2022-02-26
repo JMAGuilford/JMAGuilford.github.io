@@ -28,6 +28,22 @@ html, body {
   }
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-items {
+  align-items: center;
+
+  header {
+    margin-left: 0;
+  }
+}
 
 
 /**
@@ -35,24 +51,33 @@ html, body {
  */
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 95%;
   float: left;
   shape-outside: linear-gradient(transparent, transparent);
   z-index: 3;
   position: sticky !important;
   top: 0;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: $spacing-unit;
+  margin-left: 2.5%;
 
   @include media-query($on-palm) {
-    flex-direction: row;
-    justify-items: space-between;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
   }
 }
 
 .header-name {
+  margin-left: $spacing-unit;
+
   @include media-query($on-palm) {
+    margin-left: 0;
     flex-grow: 1;
   }
 }
@@ -111,6 +136,40 @@ header {
 }
 
 .header-nav-desktop {
+  margin-right: $spacing-unit;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+
+
+/**
+ * Sidebar nav
+ */
+
+.sidebar-text {
+  transform: rotate(90deg);
+  transform-origin: top left; 
+  -ms-transform: rotate(90deg);
+  -ms-transform-origin: top left;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+  position: sticky;
+  top: 20%;
+  width: fit-content;
+  width: -webkit-fit-content;
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.sidebar {
+  white-space: nowrap;
+  width: 2.5%;
+
   @include media-query($on-palm) {
     display: none;
   }
@@ -129,7 +188,6 @@ header {
   height: var(--rh);
   width: 100%;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   z-index: 2;
 }
 
@@ -139,8 +197,6 @@ section {
   min-height: var(--rh);
   min-width: calc(var(--rh)*1.25);
   width: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 
   @include media-query($on-palm) {
     min-width: 0;
@@ -192,8 +248,8 @@ section {
 
 .hero-grid-left, .hero-grid-right {
   display: grid;
-  grid-template-rows: 1fr auto 1fr;
   background: transparent;
+  grid-template-rows: 1fr auto 1fr;
   width: 100%;
 
   @include media-query($on-palm) {
@@ -214,7 +270,6 @@ section {
 }
 
 .hero-grid-right {
-  justify-content: center;
   @include media-query($on-palm) {
     flex-grow: 0.75;
     justify-content: space-between !important;
@@ -233,6 +288,7 @@ section {
 }
 
 .hero-grid-pane img {
+  min-height: 250px;
   max-height: 75vh;
 }
 
@@ -328,23 +384,20 @@ h4 {
 }
 
 .book-list, .book {
-  display: flex;  
-  flex-direction: column;
-  align-items: center;
-}
-
-.book {
-  min-height: var(--rh);
+  display: flex; 
 }
 
 .book-flex {
   display: flex;
-  width: 95%;
+  min-width: 950px;
   padding-right: 5%;
   flex-wrap: wrap;
   justify-content: center;
 
   @include media-query($on-palm) {
+    width: 100%;
+    padding-right: 0;
+    min-width: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -383,6 +436,7 @@ h4 {
 
   @include media-query($on-palm) {
     height: 50vh;
+    min-height: 250px;
     width: auto;
   }
 }
@@ -401,13 +455,27 @@ h4 {
 .book-horizontal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 100%;
+  /*width: 90%;*/
+  padding-top: $spacing-unit * 2;
+  padding-right: $spacing-unit;
+
+  .hero-grid-left, .hero-grid-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-grid-left {
+    align-items: flex-end;
+  }
 
   @include media-query($on-palm) {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding-top: $spacing-unit * 0.5;
+    padding-right: 0;
 
     div {
       padding-top: $spacing-unit * 0.5;
@@ -425,5 +493,56 @@ h4 {
         }
       }
     }
+  }
+}
+
+.book-talk {
+  margin-top: $spacing-unit / 2;
+}
+
+.button-link {
+  text-align: center;
+}
+
+
+/**
+ * Default layout
+ **/
+.page-content {
+  min-height: calc(var(--rh) * 0.85);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: $spacing-unit * 2;
+
+  @include media-query($on-palm) {
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+}
+
+.page {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  max-width: 50%;
+
+  @include media-query($on-palm) {
+    max-width: 100%;
+  }
+}
+
+
+
+/**
+ * 404
+ **/
+.container {
+  h1 {
+    text-align: center;
   }
 }

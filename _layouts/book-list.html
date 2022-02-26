@@ -3,20 +3,24 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="flex">
+
+    {%- include header.html wrapperclasses = "sticky" -%}
 
     <main class="book-list">
-        {%- include header.html wrapperclasses = "sticky" -%}
+        
+      <div class="book-flex">
+        {%- assign books = site.boeger | sort: "year" -%}
+        {%- for book in books reversed -%}
+            <div class="book-box">
+                <div class="book-list-image"><a link="book-image-link" href="{{ book.url }}"><img class="{%- if book.coverborder -%}book-list-hero book-border{%- else -%}book-list-hero{%- endif -%}" src="{{ book.cover }}"></a></div>
+                <div class="book-list-title"><h4><a class="book-click-through" href="{{ book.url }}">{{ book.title }}</a></h4></div>
+            </div>
+        {%- endfor -%}
+      </div>
 
-        <div class="book-flex">
-          {%- assign books = site.boeger | sort: "year" -%}
-          {%- for book in books reversed -%}
-              <div class="book-box">
-                  <div class="book-list-image"><a link="book-image-link" href="{{ book.url }}"><img class="book-list-hero" src="{{ book.cover }}"></a></div>
-                  <div class="book-list-title"><h4><a class="book-click-through" href="{{ book.url }}">{{ book.title }}</a></h4></div>
-              </div>
-          {%- endfor -%}
-        </div>
+      {%- include sidebar.html -%}
+
     </main>
 
   </body>

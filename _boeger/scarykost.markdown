@@ -1,10 +1,13 @@
 ---
 layout: book
 title: Scarykost
+sectiontitle: Bøger
+subsectiontitle: Scarykost
 type: Poesi
 publisher: OVBIDAT
 year: 2016
 cover: /assets/covers/scarykost.jpg
+coverborder: 1
 buy: https://ovbidat.cargo.site
 ---
 

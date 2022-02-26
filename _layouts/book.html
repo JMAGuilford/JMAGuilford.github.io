@@ -3,38 +3,37 @@
 
   {%- include head.html -%}
 
-  <body class="no-bg">
+  <body class="flex">
 
-    <main class="book">
-      {%- include header.html wrapperclasses = "sticky" -%}
+    {%- include header.html wrapperclasses = "sticky" -%}
+
+    <article class="book">
 
       <div class="book-horizontal-grid">
         <div class="hero-grid-left">
-          <div></div>
           <div class="hero-grid-pane">
-            <div class="book-image">
+            <div class="{%- if page.coverborder -%}book-image book-border{%- else -%}book-image{%- endif -%}">
               <img src="{{ page.cover | relative_url }}" alt="Cecilie Lind - {{ page.title }}" height="auto">
             </div>
           </div>
-          <div></div>
         </div>
         <div class="hero-grid-right">
-          <div></div>
           <div class="hero-grid-pane">
             <h3 class="book-title">{{ page.title }}</h3>
             <div class="book-talk">
               {{ page.type }}</br>
               {{ page.publisher }}</br>
               {{ page.year }}</br></br>
-              {{ content | markdownify }}
+              {{ content }}
             </div>
             {%- include buy-link.html buylink = page.buy -%}
           </div>
-          <div></div>
         </div>
       </div>
 
-    </main>
+      {%- include sidebar.html -%}
+
+    </article>
 
   </body>
 

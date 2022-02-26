@@ -1,0 +1,9 @@
+{%- assign url_slugs = page.url | split: "/" -%}
+{%- capture category_link -%}{{url_slugs[0]}}/{{url_slugs[1]}}{%- endcapture -%}
+{%- if url_slugs.size > 2 -%}
+    {%- capture page_link -%}{{url_slugs[0]}}/{{url_slugs[1]}}/{{url_slugs[2]}}{%- endcapture -%}
+{%- endif -%}
+
+<div class="sidebar">
+    <h5 class="sidebar-text"><a href="{{site.url}}">{{site.author}}</a> / <a href="{{category_link}}">{{page.sectiontitle}}</a> {%- if page.subsectiontitle -%}&nbsp;/ <a href="{{page_link}}">{{page.subsectiontitle}}</a>{%- endif -%}</h5>
+</div>

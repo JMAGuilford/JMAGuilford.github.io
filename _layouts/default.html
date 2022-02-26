@@ -3,17 +3,20 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="flex center-items">
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <main class="page">
+      <div class="page-content">
+        <h2>{{page.title}}</h2>
+        <div class="content">
+          {{ content }}
+        </div>
       </div>
-    </main>
 
-    {%- include footer.html -%}
+      {%- include sidebar.html -%}
+    </main>
 
   </body>
 

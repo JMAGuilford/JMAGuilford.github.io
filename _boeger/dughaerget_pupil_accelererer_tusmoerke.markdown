@@ -1,6 +1,8 @@
 ---
 layout: book
 title: Dughærget pupil accelererer tusmørke
+sectiontitle: Bøger
+subsectiontitle: Dughærget pupil accelererer tusmørke
 type: Poesi
 publisher: Samleren
 year: 2012

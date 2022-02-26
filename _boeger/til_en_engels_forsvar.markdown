@@ -1,13 +1,17 @@
 ---
 layout: book
 title: Til en engels forsvar
+sectiontitle: Bøger
+subsectiontitle: Til en engels forsvar
 type: Roman
 publisher: Gladiator
 year: 2017
 cover: /assets/covers/til_en_engels_forsvar.jpg
+coverborder: 1
 buy: https://forlagetgladiator.dk/collections/boger/products/til-en-engels-forsvar?_pos=1&_fid=5fc6cf147&_ss=c
 ---
 
+<p class="black">&starf;&starf;&starf;&starf;&starf;</p>
 “Den stærke kæbe? Sådan én forbinder vi vel umiddelbart med en løve, en krokodille, en haj eller en garvet bokser. Men vi kan måske også forestille os den som kæbepartiet, hvorfra der i Til en engels forsvar lyder en på én gang suveræn og sårbart skrøbelig stemme, som ikke rigtig ligner noget andet, man har læst eller hørt. Når man fornemmer den, opvejer det ens eventuelle episke desorientering. Eller med bogens stolte ord: Hellere slå sig til blods end til tåls.”
 --<i><a href="https://www.information.dk/kultur/anmeldelse/2017/06/hellere-slaa-blods-taals" target="_blank" rel="noopener noreferrer">Information</a> (Erik Skyum-Nielsen)</i>
 
