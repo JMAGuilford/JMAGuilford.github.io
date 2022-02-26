@@ -39,10 +39,6 @@ html, body {
 
 .center-items {
   align-items: center;
-
-  header {
-    margin-left: 0;
-  }
 }
 
 
@@ -51,6 +47,7 @@ html, body {
  */
 header {
   display: flex;
+  width: 100%;
   align-items: baseline;
   justify-content: center;
   position: sticky !important;
