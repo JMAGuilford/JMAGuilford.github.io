@@ -2,6 +2,7 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
 <header class="{{ include.wrapperclasses }}" id="stickyHeader">
+  <div class="header-wrapper">
   <div class="header-name">
     <h3><a class="home-link" href="{{ site.url }}">{{ site.author }}</a></h3>
   </div>
@@ -39,5 +40,6 @@
     </nav>
   </div>
   {%- endif -%}
+  </div>
 </header>
 

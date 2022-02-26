@@ -202,9 +202,15 @@ header, header a {
  */
 header {
   background-color: $float-background-color;
-  border-bottom: 2px solid $accent-color;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  -moz-filter: blur(16px);
+  -ms-filter: blur(16px);
+  -o-filet: blur(16px);
+}
+
+.header-wrapper {
+  border-bottom: 2px solid $accent-color;
 }
 
 .main-nav {

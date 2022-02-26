@@ -51,24 +51,29 @@ html, body {
  */
 header {
   display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: sticky !important;
+  top: 0;
+  z-index: 3;
+}
+
+ .header-wrapper {
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
   width: 95%;
-  float: left;
-  shape-outside: linear-gradient(transparent, transparent);
-  z-index: 3;
-  position: sticky !important;
+  /*float: left;
+  shape-outside: linear-gradient(transparent, transparent);*/
   top: 0;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-top: $spacing-unit;
-  margin-left: 2.5%;
 
   @include media-query($on-palm) {
     width: 100%;
-    margin-left: 0;
     align-items: center;
   }
 }
