@@ -19,6 +19,9 @@
   margin-bottom: $spacing-unit * 0.125 !important;
 }
 
+.thinner {
+  font-weight: $base-font-weight * 0.25;
+}
 
 
 /**
@@ -79,6 +82,10 @@ h3 {
   }
 }
 
+h6 {
+  margin-bottom: $spacing-unit * 0.75 !important;
+}
+
 .review-attribution {
   margin-bottom: $spacing-unit;
   margin-top: $spacing-unit * -0.25;
@@ -127,12 +134,13 @@ nav {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight * 2;
+h1, h2, h3, /*h4,*/ h5, h6 {
+  /*font-weight: $base-font-weight * 2;*/ 
+  text-transform: uppercase;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: /*8rem;*/ 5rem;
 
   @include media-query($on-palm) {
     font-size: 12vmin;
@@ -146,15 +154,28 @@ h2 {
 
 h3 {
   font-size: 2.5rem;
+
+  @include media-query($on-palm) {
+    font-size: 2rem;
+  }
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: $base-font-weight * 0.5;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: $base-font-weight * 0.5 !important;
+  text-transform: none !important;
   color: $accent-color;
+}
+
+h6 {
+  font-size: 1.5rem;
+  color: $text-color !important;
+  text-transform: none !important;
 }
 
 
@@ -166,9 +187,6 @@ a {
   color: $accent-color;
   text-decoration: none;
   text-decoration-color: transparent;
-  transition-property: text-decoration-color;
-  transition-duration: $transition-time;
-  transition-timing-function: ease-out;
 
   &:visited {
     color: $accent-color;
@@ -189,12 +207,53 @@ a {
   }
 }
 
+.book-click-through {
+  color: $text-color;
+
+  &:visited {
+    color: $text-color;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline !important;
+    text-decoration-color: $accent-color !important;
+  }
+}
+
+.book-box:hover {
+  .book-list-title h4 {
+    text-decoration: underline !important;
+    text-decoration-color: $accent-color !important;
+  }
+}
+
+.main-nav {
+  font-weight: $base-font-weight * 0.75 !important;
+  text-transform: lowercase;
+}
+
 .main-nav a, .click-through-link {
   color: $text-color !important;
 }
 
 header, header a {
   color: $float-text-color !important;
+}
+
+.review-link {
+  color: $text-color !important;
+  text-decoration: underline !important;
+  text-decoration-color: $accent-color !important;
+  text-underline-offset: 0.125rem;
+
+  &:visited {
+    color: $text-color !important;
+  }
+
+  &:hover {
+    color: $accent-color !important;
+  }
 }
 
 
@@ -218,12 +277,21 @@ header {
   font-size: $base-font-size * 1.5;
 }
 
-.main-nav, .header-nav-desktop {
-  font-weight: $base-font-weight * 1.5;
+.header-nav-desktop {
+  font-weight: $base-font-weight * 0.5;
+  text-transform: lowercase;
 }
 
 .menu-nav-mobile {
   background-color: $menu-background-color;
+}
+
+.page-content h6 {
+  margin-bottom: 12.5vh !important;
+
+  @include media-query($on-palm) {
+    margin-bottom: $spacing-unit * 1.5 !important;
+  }
 }
 
 
@@ -260,6 +328,10 @@ header {
 
 .mobile-nav {
   line-height: $base-line-height * 1.5;
+
+  h3 {
+    text-transform: lowercase;
+  }
 }
 
 
@@ -279,7 +351,7 @@ header {
 
   &:hover {
     border-color: $accent-color;
-    background-color: lightgray;
+    background-color: rgb(250, 250, 250);
     color: $accent-color;
   }
 }

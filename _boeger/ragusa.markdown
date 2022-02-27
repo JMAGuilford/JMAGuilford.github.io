@@ -14,13 +14,13 @@ buy: http://kronstork.dk/boghandel/orissabiblioteket-1-4
 “Måske tager Cecilie Linds 'Ragusa' afsæt i Juléns digt: »Jeg er et barn, jeg er dit barn, jeg vil være dit barn«. Blot skriver hun ikke om at være barn, men om at være med barn, gravid. Det er svimle, uhyggelige og smukke digte.”
 
 
-<p class="review-attribution">—<i>Benedicte Gui De Thurah Huang, <a href="https://politiken.dk/kultur/boger/boganmeldelser/skonlitteratur_boger/art6321150/Fire-danske-digtere-genskriver-svenske-Ola-Juléns-kultklassiker-Orissa" target="_blank" rel="noopener noreferrer">Politiken</a></i></p>
+<p class="review-attribution">—<a class="review-link" href="https://politiken.dk/kultur/boger/boganmeldelser/skonlitteratur_boger/art6321150/Fire-danske-digtere-genskriver-svenske-Ola-Juléns-kultklassiker-Orissa" target="_blank" rel="noopener noreferrer">Benedicte Gui De Thurah Huang, <b>Politiken</b></a></p>
 
 “Det at vise omsorg og det at gøre tavs kommer faretruende tæt på hinanden her. Graviditeten forbindes med sorg, men 'Ragusa' er egentlig ikke interesseret i at forklare eller udlægge den sorg for os. Det er en stemning, man må acceptere - og også straks acceptere, det er jo en af de ting, god litteratur kan - mens man bladrer sig igennem siderne.”
 
 
-<p class="review-attribution">—<i>Tue Andersen Nexø, <a href="https://www.information.dk/kultur/anmeldelse/2018/01/orissa-biblioteket-formeksperiment-paa-allerbedste-maade" target="_blank" rel="noopener noreferrer">Information</a></i></p>
+<p class="review-attribution">—<a class="review-link" href="https://www.information.dk/kultur/anmeldelse/2018/01/orissa-biblioteket-formeksperiment-paa-allerbedste-maade" target="_blank" rel="noopener noreferrer">Tue Andersen Nexø, <b>Information</b></a></p>
 
 Cecilie Lind skriver eventyrsk fuldmånebelyst uheldsvangerskabspoesi, scarrylyrik, kunne man kalde det, med en unheimlichhed, som ingen andre danske digtere mestrer. Det er hårdt og godt.”
 
-<p class="review-attribution">—<i>Klaus Rothstein, Weekendavisen</i></p>
+<p class="review-attribution">—Klaus Rothstein, <b>Weekendavisen</b></p>

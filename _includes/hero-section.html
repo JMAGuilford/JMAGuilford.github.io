@@ -8,7 +8,7 @@
       <div class="hero-grid-right">
         <div></div>
         <div class="hero-grid-pane">
-          <h1>{{authornames.first}}<span class="breaker"></span>{{authornames.last}}</h1>
+          <h1>{{authornames.first}}<!-- <span class="breaker"></span> -->&nbsp;{{authornames.last}}</h1>
           {%- if page_paths -%}
           <nav class="main-nav"> 
             {%- assign iterator = 1 -%}
@@ -17,7 +17,7 @@
               {%- if my_page.title -%}
                 <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                 {%- if iterator < page_paths.size -%}
-                  &nbsp; &#8226; &nbsp;
+                  &nbsp; <!-- &#8226; --> | &nbsp;
                 {%- endif -%}
                 {%- assign iterator = iterator | plus: 1 -%}
               {%- endif -%}

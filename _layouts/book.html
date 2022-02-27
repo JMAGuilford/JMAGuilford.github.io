@@ -19,10 +19,10 @@
         </div>
         <div class="hero-grid-right">
           <div class="hero-grid-pane">
-            <h3 class="book-title">{{ page.title }}</h3>
+            <h6 class="book-title">{{ page.title }}</h6>
             <div class="book-talk">
-              {{ page.publisher }}, {{ page.year }}</br>
-              {{ page.type }}</br></br></br>
+              <div class="info-block">{{ page.publisher }}, {{ page.year }}</br>
+              {{ page.type }}</div>
               {{ content }}
             </div>
             {%- include buy-link.html buylink = page.buy -%}
