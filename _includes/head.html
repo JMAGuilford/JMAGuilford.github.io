@@ -5,6 +5,7 @@
   <title>{{site.author}} - {{page.title}}</title>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ "/assets/favicon.png" | relative_url }}">
+  {{ include.preloads }}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
