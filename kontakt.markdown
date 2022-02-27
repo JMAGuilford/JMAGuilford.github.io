@@ -9,4 +9,4 @@ Cecilie Lind deltager i oplæsninger, foredrag undervisning og interviews. For m
 <br>
 <br>
 <br>
-<div class="center-block"><a class="review-link" href="mailto:cecilielind@live.dk">Cecilielind@live.dk</a></div>
+<div class="center-block"><a class="review-link" href="mailto:cecilielind@live.dk">cecilielind@live.dk</a></div>
