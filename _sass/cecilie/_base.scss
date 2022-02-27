@@ -135,12 +135,11 @@ nav {
  * Headings
  */
 h1, h2, h3, /*h4,*/ h5, h6 {
-  /*font-weight: $base-font-weight * 2;*/ 
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: /*8rem;*/ 5rem;
+  font-size: 5rem;
 
   @include media-query($on-palm) {
     font-size: 12vmin;
