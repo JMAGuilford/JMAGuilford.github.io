@@ -32,6 +32,7 @@ author: Cecilie Lind
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Set header pages
 header_pages: 
