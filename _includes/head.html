@@ -6,12 +6,13 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ "/assets/favicon.png" | relative_url }}">
   {{ include.preloads }}
-  <link rel="canonical" href="{{page.url}}">
+  {%- capture page_path -%}{{site.url}}{{page.url}}{%- endcapture -%}
+  <link rel="canonical" href="{{page_path}}">
   {%- if page.metadescription -%}
     <meta name="description" content="page.metadescription">
   {%- endif -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
+  <!--{%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}-->
   {%- endif -%}
   <script src="{{ "/assets/scripts.js" | relative_url }}"></script>
 </head>
