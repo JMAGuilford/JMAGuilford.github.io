@@ -134,7 +134,7 @@ nav {
 /**
  * Headings
  */
-h1, h2, h3, /*h4,*/ h5, h6 {
+h1, h2, h3, /*h4,*/ h5/*, h6*/ {
   text-transform: uppercase;
 }
 
@@ -174,7 +174,7 @@ h5 {
 h6 {
   font-size: 1.5rem;
   color: $text-color !important;
-  text-transform: none !important;
+  text-transform: lowercase;
 }
 
 
@@ -261,11 +261,11 @@ header, header a {
  */
 header {
   background-color: $float-background-color;
-  backdrop-filter: blur(16px);
+  /*backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   -moz-filter: blur(16px);
   -ms-filter: blur(16px);
-  -o-filet: blur(16px);
+  -o-filet: blur(16px);*/
 }
 
 .header-wrapper {

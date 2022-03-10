@@ -7,8 +7,12 @@
 
     {%- include header.html wrapperclasses = "sticky" -%}
 
+    <div class="book-heading">
+      <h6>{{page.title}}</h6> 
+    </div>
+
     <main class="book-list">
-        
+
       <div class="book-flex">
         {%- assign books = site.boeger | sort: "year" -%}
         {%- for book in books reversed -%}

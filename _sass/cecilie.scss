@@ -14,7 +14,7 @@ $text-color:       #111 !default;
 $float-text-color: black;
 $background-color: white !default;
 $accent-color:      #ff7d45 !default;
-$float-background-color: #ffffffcc !default;
+$float-background-color: /*#ffffffcc*/ white !default;
 $section-background-color: #ede5d8 !default;
 $section-background-color-alternate: #c7955f !default;
 $menu-background-color: radial-gradient(circle 130vw, #eeeeee, rgba(252, 252, 252, 0.9)) !default;

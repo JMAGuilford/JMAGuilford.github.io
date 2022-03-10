@@ -169,6 +169,10 @@ header {
   }
 }
 
+.book-list .sidebar .sidebar-text {
+  margin-top: -225px;
+}
+
 .sidebar {
   white-space: nowrap;
   width: 2.5%;
@@ -295,6 +299,17 @@ section {
   max-height: 75vh;
 }
 
+.book .book-horizontal-grid .hero-grid-left .hero-grid-pane img {
+  min-height: 600px;
+  object-fit: contain;
+  
+  @include media-query($on-palm) {
+    min-height: 250px;
+    min-width: auto;
+  }
+
+}
+
 .book-image img {
   @include media-query($on-palm) {
     max-height: 40vh !important;
@@ -392,6 +407,26 @@ h4 {
   }
 }
 
+.book-heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 12.5vh;
+
+  h6 {
+    margin-bottom: 12.5vh !important;
+  }
+
+  @include media-query($on-palm) {
+    padding-top: $spacing-unit * 1.5;
+
+    h6 {
+      margin-bottom: $spacing-unit * 1.5 !important;
+    }
+  }
+}
+
 .book-list, .book {
   display: flex; 
 }
@@ -403,8 +438,11 @@ h4 {
 .book-flex {
   display: flex;
   min-width: 950px;
-  padding-right: 5%;
-  padding-top: $spacing-unit * 0.7333;
+  /* padding-right: 5%; */
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  /* padding-top: $spacing-unit * 0.7333; */
+  padding-top: 0;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -418,7 +456,8 @@ h4 {
 }
 
 .book-box {
-  padding-top: $spacing-unit;
+  /*padding-top: $spacing-unit;*/
+  padding-top: 0;
   padding-bottom: $spacing-unit * 2;
   width: 33%;
   overflow: hidden;
@@ -452,9 +491,9 @@ h4 {
   margin-right: auto;
 
   @include media-query($on-palm) {
-    height: 40vh;
-    min-height: 250px;
-    width: auto;
+    height: auto;
+    /*min-height: 250px;*/
+    width: 60%;
   }
 }
 
@@ -483,12 +522,19 @@ h4 {
   padding-top: $spacing-unit * 2;
   padding-right: $spacing-unit;
 
+  .hero-grid-left .hero-grid-pane {
+    padding-left: $spacing-unit * 1;
+  }
+
+  .hero-grid-right .hero-grid-pane {
+    padding-left: $spacing-unit * 0.5;
+  }
+
   .hero-grid-left, .hero-grid-right {
     display: flex;
     flex-direction: column;
 
     .hero-grid-pane {
-      padding-left: $spacing-unit * 0.5;
       padding-right: $spacing-unit * 0.5;
 
       @include media-query($on-palm) {
@@ -500,7 +546,7 @@ h4 {
 
   .hero-grid-left {
     align-items: flex-end;
-    padding-right: $spacing-unit * 2;
+    padding-right: $spacing-unit * 0.5;
 
     @include media-query($on-palm) {
       padding-right: 0;
