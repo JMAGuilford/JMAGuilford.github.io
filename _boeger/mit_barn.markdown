@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Mit barn
+metadescription: Mit barn er et langdigt skrevet af forfatter Cecilie Lind, udgivet på Gyldendal i 2019
 sectiontitle: Bøger
 subsectiontitle: Mit barn
 type: Langdigt

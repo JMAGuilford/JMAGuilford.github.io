@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Scarykost
+metadescription: scarykost er poesi skrevet af forfatter Cecilie Lind, udgivet på OVBIDAT i 2016
 sectiontitle: Bøger
 subsectiontitle: Scarykost
 type: Poesi

@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Til en engels forsvar
+metadescription: Til en engels forsvar er en roman skrevet af forfatter Cecilie Lind, udgivet på Gladiator i 2017
 sectiontitle: Bøger
 subsectiontitle: Til en engels forsvar
 type: Roman

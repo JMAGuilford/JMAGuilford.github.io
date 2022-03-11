@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Den nye spejltrådskaserne
+metadescription: Den nye spejltrådskaserne er et langdigt skrevet af forfatter Cecilie Lind, udgivet på Escho i 2020
 sectiontitle: Bøger
 subsectiontitle: Den nye spejltrådskaserne
 type: Langdigt

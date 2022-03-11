@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Strunk
+metadescription: Strunk er et langdigt skrevet af forfatter Cecilie Lind, udgivet på Gladiator i 2015
 sectiontitle: Bøger
 subsectiontitle: Strunk
 type: Langdigt

@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Pigedyr
+metadescription: Pigedyr er en roman skrevet af forfatter Cecilie Lind. Bogen udkommer på Gyldendal i April 2022
 sectiontitle: Bøger
 subsectiontitle: Pigedyr
 type: Roman

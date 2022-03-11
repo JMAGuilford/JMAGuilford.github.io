@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Dughærget pupil accelererer tusmørke
+metadescription: Dughærget pupil accelererer tusmørke er poesi skrevet af forfatter Cecilie Lind, udgivet på Samleren i 2012
 sectiontitle: Bøger
 subsectiontitle: Dughærget pupil accelererer tusmørke
 type: Poesi

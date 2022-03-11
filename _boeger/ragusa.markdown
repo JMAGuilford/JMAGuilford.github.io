@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Ragusa
+metadescription: Ragusa er Cecilie Linds genskrivning af Ola Juléns Orissa, udgivet på Kronstork i 2018
 sectiontitle: Bøger
 subsectiontitle: Ragusa
 type: Poesi (genskrivning af Ola Juléns Orissa)

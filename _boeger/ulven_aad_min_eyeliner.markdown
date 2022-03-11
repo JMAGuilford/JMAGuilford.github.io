@@ -1,6 +1,7 @@
 ---
 layout: book
 title: Ulven åd min eyeliner
+metadescription: Ulven åd min eyeliner er poesi skrevet af forfatter Cecilie Lind, udgivet på OVBIDAT in 2010
 sectiontitle: Bøger
 subsectiontitle: Ulven åd min eyeliner
 type: Poesi
