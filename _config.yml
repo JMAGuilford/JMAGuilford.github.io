@@ -23,7 +23,7 @@ email: cecilielind@live.dk
 description: >- # this means to ignore newlines until "baseurl:"
   Forfatter Cecilie Linds officielle hjemmeside
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.cecilielindskriver.dk" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.cecilielindskriver.dk" # the base hostname & protocol for your site, e.g. http://example.com
 author: Cecilie Lind
 
 # Build settings
