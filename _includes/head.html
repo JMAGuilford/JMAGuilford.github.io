@@ -9,7 +9,7 @@
   {%- capture page_path -%}{{site.url}}{{page.url}}{%- endcapture -%}
   <link rel="canonical" href="{{page_path}}">
   {%- if page.metadescription -%}
-    <meta name="description" content="page.metadescription">
+    <meta name="description" content="{{page.metadescription}}">
   {%- endif -%}
   <!--{%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
