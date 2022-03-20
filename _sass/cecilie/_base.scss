@@ -347,8 +347,9 @@ header {
   background-color: transparent;
   color: black;
   border-style: solid;
-  border-color: black;
+  border-color: $accent-color;
   border-radius: 0;
+  border-width: 1px;
   padding: $spacing-unit / 4;
   cursor: pointer;
 
