@@ -16,7 +16,7 @@ buy: https://forlagetgladiator.dk/collections/boger/products/til-en-engels-forsv
 
 <p class="review-attribution">—<a class="review-link" href="https://www.information.dk/kultur/anmeldelse/2017/06/hellere-slaa-blods-taals" target="_blank" rel="noopener noreferrer">Erik Skyum-Nielsen, <b>Information</b></a></p>
 
-“'Til en engels forsvar' er en utrolig underlig roman, en nøgleroman uden nøgle, et mystisk spøgelsesspind og en automatskriftsagtig stråleglans uden om noget meget hårdt og sort. Og sjældent tror jeg, det har været mere rigtigt at sige: på godt og ondt.”
+“&#8216;Til en engels forsvar' er en utrolig underlig roman, en nøgleroman uden nøgle, et mystisk spøgelsesspind og en automatskriftsagtig stråleglans uden om noget meget hårdt og sort. Og sjældent tror jeg, det har været mere rigtigt at sige: på godt og ondt.”
 
 <p class="review-attribution">—<a class="review-link" href="https://politiken.dk/kultur/boger/boganmeldelser/skonlitteratur_boger/art5977211/Til-en-engels-forsvar-er-utrolig-og-helt-vildt-underlig" target="_blank" rel="noopener noreferrer">Kizaja Ulrikke Routhe-Mogensen, <b>Politiken</b></a></p>
 
