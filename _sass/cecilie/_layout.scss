@@ -446,7 +446,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
 
-  @include media-query($on-palm-plus) {
+  @include media-query($on-palm) {
     width: 100%;
     padding-right: 0;
     min-width: 0;
@@ -460,6 +460,10 @@ h4 {
   padding-top: 0;
   padding-bottom: $spacing-unit * 2;
   width: 33%;
+
+  @include media-query($on-palm-plus) {
+    width: 50%;
+  }
 
   @include media-query($on-palm) {
     overflow: inherit;
