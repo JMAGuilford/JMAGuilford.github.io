@@ -28,7 +28,9 @@ $transition-time: 0.25s !default;
 $table-text-align: left !default;
 
 // Media inquiries
-$on-palm:          950px !default;
+$on-palm:           888px !default;
+$on-palm-plus:      950px !default;
+$on-palm-plus-plus: 975px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

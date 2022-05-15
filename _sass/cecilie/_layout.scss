@@ -164,7 +164,7 @@ header {
   width: fit-content;
   width: -webkit-fit-content;
 
-  @include media-query($on-palm) {
+  @include media-query($on-palm-plus-plus) {
     display: none;
   }
 }
@@ -437,7 +437,7 @@ h4 {
 
 .book-flex {
   display: flex;
-  min-width: 950px;
+  /* min-width: 950px; */
   /* padding-right: 5%; */
   padding-right: 2.5%;
   padding-left: 2.5%;
@@ -446,7 +446,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
 
-  @include media-query($on-palm) {
+  @include media-query($on-palm-plus) {
     width: 100%;
     padding-right: 0;
     min-width: 0;
@@ -460,7 +460,6 @@ h4 {
   padding-top: 0;
   padding-bottom: $spacing-unit * 2;
   width: 33%;
-  overflow: hidden;
 
   @include media-query($on-palm) {
     overflow: inherit;
