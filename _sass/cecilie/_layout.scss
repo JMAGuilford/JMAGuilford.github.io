@@ -461,7 +461,7 @@ h4 {
   padding-bottom: $spacing-unit * 2;
   width: 33%;
 
-  @include media-query($on-palm-plus) {
+  @include media-query($on-palm-plus-plus) {
     width: 50%;
   }
 
