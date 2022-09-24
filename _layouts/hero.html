@@ -10,11 +10,11 @@
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-  <body class="no-overflow bg">
+  <body>
 
-    <main class="scroll-container">
+    <!--<main class="scroll-container">-->
       {%- include hero-section.html -%}
-    </main>
+    <!--</main>-->
 
   </body>
 

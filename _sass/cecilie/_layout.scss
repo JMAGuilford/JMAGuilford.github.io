@@ -17,17 +17,6 @@ html, body {
   min-height: 100%;
 }
 
-.bg {
-  background: url($siteurl + "/assets/cecilie-cover.jpg") no-repeat;
-  background-position-y: bottom;
-  background-position-x: 10%;
-  background-size: auto 100%;
-
-  @include media-query($on-palm) {
-    background: none !important;
-  }
-}
-
 .overflow-scroll {
   overflow: scroll;
 }
@@ -66,8 +55,8 @@ header {
   top: 0;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-top: $spacing-unit;
+  padding-bottom: 0.75rem;
+  padding-top: $spacing-unit * 0.75;
 
   @include media-query($on-palm) {
     width: 100%;
@@ -140,6 +129,7 @@ header {
 
 .header-nav-desktop {
   margin-right: $spacing-unit;
+  padding-bottom: 6px;
 
   @include media-query($on-palm) {
     display: none;
@@ -192,7 +182,7 @@ header {
 }
 
 .scroll-container {
-  height: var(--rh);
+  /*height: var(--rh);*/
   width: 100%;
   overflow-y: scroll;
   z-index: 2;
@@ -214,10 +204,18 @@ section {
   height: var(--rh);
 }
 
+.hide-vertical {
+  overflow-y: hidden;
+}
+
 .section-horizontal-flex, .hero-horizontal-flex {
   display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.hero-horizontal-flex {
+  height: 100%;
 }
 
 .section-horizontal-flex {
@@ -283,6 +281,13 @@ section {
   }
 }
 
+.no-overlap {
+  max-width: calc(100% - (100vh / 1.5));
+  @include media-query($on-palm) {
+    max-width: 100%;
+  }
+}
+
 .hero-grid-pane {
   width: fit-content !important;
   padding-left: $spacing-unit * 2;
@@ -316,35 +321,48 @@ section {
   }
 }
 
-h1, .main-nav {
-  text-align: right;
-
+h1 {
   @include media-query($on-palm) {
-    text-align: center;
+    padding-bottom: $spacing-unit * 0.25;
+    margin-bottom: 2.5px;
   }
+}
+
+h1, .main-nav {
+  text-align: center;
 }
 
 .main-nav {
   padding-top: $spacing-unit * 0.5;
   text-align: center;
+  white-space: nowrap;
 
   .nav-link {
     padding-left: $spacing-unit * 0.5;
     padding-right: $spacing-unit * 0.5;
+
+    @include media-query($on-palm) {
+      padding-left: $spacing-unit * 0.25;
+      padding-right: $spacing-unit * 0.25;
+    }
   }
 
   @include media-query($on-palm) {
-    padding-top: $spacing-unit * 0.125;
+    padding-top: 10px;
   }
 }
 
 .hero-image {
   width: #{"max(65.79vh, 100%)"};
   background-color: transparent;
+  background: url($siteurl + "/assets/cecilie-cover.jpg") no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-size: auto 100%;
 
   @include media-query($on-palm) {
-    background: url($siteurl + "/assets/cecilie-cover.jpg") no-repeat;
-    background-position-y: bottom;
+    /*background: url($siteurl + "/assets/cecilie-cover.jpg") no-repeat;*/
+    /*background-position-y: bottom;*/
     background-position-x: center;
     background-size: auto 95%;
     height: 100%;
@@ -431,9 +449,9 @@ h4 {
   display: flex; 
 }
 
-.book .sidebar-text {
+/*.book .sidebar-text {
   top: 160px;
-}
+}*/
 
 .book-flex {
   display: flex;

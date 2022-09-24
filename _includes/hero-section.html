@@ -2,24 +2,22 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-<section class="section-hero" id="hero">
+<main class="section-hero hide-vertical" id="hero">
     <div class="hero-horizontal-flex">
       <div class="hero-image"></div>
-      <div class="hero-grid-right center">
+      <div class="hero-grid-right center no-overlap">
         <div></div>
         <div class="hero-grid-pane">
           <h1>{{authornames.first}}&nbsp;{{authornames.last}}</h1>
           {%- if page_paths -%}
           <nav class="main-nav"> 
-            {%- assign iterator = 1 -%}
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title -%}
                 <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-                {%- if iterator < page_paths.size -%}
-                  &nbsp;|&nbsp;
-                {%- endif -%}
-                {%- assign iterator = iterator | plus: 1 -%}
+                <!-- {%- if iterator < page_paths.size -%}
+                  &nbsp;|&nbsp; 
+                {%- endif -%} -->
               {%- endif -%}
             {%- endfor -%}
           </nav>
@@ -28,4 +26,4 @@
         <div></div>
       </div>
     </div>
-</section>
+  </main>

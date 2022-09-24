@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "dk" }}">
+
+  {%- include head.html -%}
+
+  <body class="flex">
+
+    {%- include header.html wrapperclasses = "sticky" -%}
+
+    <div class="book-heading">
+      <h6>{{page.title}}</h6> 
+    </div>
+
+    <main class="event-list">
+
+      <div class="event-flex">
+        {%- assign eventlist = site.events | sort: "date" -%}
+        {%- for event in eventlist reversed -%}
+            <div class="event-box">
+                <div class="event-date">
+                    <div class="event-day">{{ event.date | date: "%d" }}</div>
+                    <div class="event-month">{{ event.date | date: "%B" }}</div>
+                </div>
+                <div class="event-hero">
+                    <h6 class="event-title">{{ event.title }}</h6>
+                    <div class="event-description">{{ event.description }}</div>
+                    {%- if event.link -%}
+                        <a class="event-link">{{ event.link }}</a>
+                    {%- endif -%}
+                    <div class="event-venue">{{ event.venue }}, {{ event.town }}, {{event.time}}</div>
+                </div>
+                <div class="event-img-box"><img class="event-img" source="{{ event.image }}"></div>
+            </div>
+        {%- endfor -%}
+      </div> 
+
+      {%- include sidebar.html -%}
+
+    </main>
+
+  </body>
+
+</html> 

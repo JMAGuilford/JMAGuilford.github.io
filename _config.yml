@@ -37,6 +37,7 @@ header_pages:
   - boeger.markdown
   - om.markdown
   - kontakt.markdown
+#  - kalender.markdown
 
 # Collections
 collections:
@@ -45,16 +46,10 @@ collections:
     permalink: /:collection/:path/
     sort_by: year
     
-    #order:
-    #  - pigedyr.markdown
-    #  - den_nye_spejltraadskaserne.markdown
-    #  - mit_barn.markdown
-    #  - ragusa.markdown
-    #  - til_en_engels_forsvar.markdown
-    #  - scarykost.markdown
-    #  - strunk.markdown
-    #  - dughaerget_pupil_accelererer_tusmoerke.markdown
-    #  - ulven_aad_min_eyeliner.markdown
+  events:
+    output: true 
+    permalink: /:collection/:path/
+    sort_by: date
 
 # Exclude from processing.
 # The following items will not be processed, by default.
