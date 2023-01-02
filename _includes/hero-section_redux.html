@@ -1,0 +1,23 @@
+{%- assign authornames = site.author | split: " " -%}
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+<main class="hero-flex">
+
+  <div class="hero-image"></div>
+
+  <div class="nav-pane">
+    <h1>{{authornames.first}}&nbsp;{{authornames.last}}</h1>
+    {%- if page_paths -%}
+      <nav class="main-nav"> 
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+  </div>
+
+</main>

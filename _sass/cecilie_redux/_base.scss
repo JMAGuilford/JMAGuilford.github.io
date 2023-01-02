@@ -1,0 +1,111 @@
+/**
+ * Basic styling
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-size: $base-font-size;
+
+    @include media-query($on-palm) {
+        font-size: $base-font-size * 0.75;
+    }
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+        -moz-font-feature-settings: "kern" 1;
+            -o-font-feature-settings: "kern" 1;
+            font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+
+/**
+ * Margins and line-heights
+ */
+
+ h2, h3, h4, h5, h6,
+ p, blockquote, pre,
+ ul, ol, dl, figure,
+ %vertical-rhythm {
+   margin-bottom: $spacing-unit / 2;
+ }
+
+/**
+ * Images
+ */
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Lists
+ */
+
+
+
+/**
+ * Headings
+ */
+
+h1/*, h2, h3, h4, h5, h6*/ {
+    text-transform: uppercase;
+}
+
+h1 {
+    line-height: 1;
+    font-size: 4.5rem;
+}
+
+h1:before {
+    border-bottom: 1px solid $accent-color;
+}
+
+/**
+ * Links
+ */
+
+a {
+    text-decoration: none;
+    text-decoration-color: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: $accent-color;
+}
+
+/**
+ * Navigation
+ */
+
+nav {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: $text-color !important;
+}
+
+.main-nav {
+    font-size: 1.5rem;
+    font-weight: $base-font-weight * 0.75 !important;
+    text-transform: uppercase;
+}
+

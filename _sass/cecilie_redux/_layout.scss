@@ -1,0 +1,53 @@
+h1 {
+    position: relative;
+    z-index: 1;
+    padding: 0 0 $spacing-unit 0;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+h1:before {
+    content: "";
+    position: absolute;
+    left: calc((100% - 250px) / 2);
+    bottom: 0;
+    height: 1px;
+    width: 250px;
+}
+
+.main-nav {
+    padding-top: $spacing-unit;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-link {
+    padding: 0 $spacing-unit;
+}
+
+.hero-image {
+    flex: 1 0 65vh;
+    max-width: max(65.79%, 100%);
+    height: auto;
+    min-height: 65%;
+    max-height: 100%;
+    background: url($siteurl + "/assets/cecilie-cover.jpg") no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: auto 100%;
+}
+
+.hero-flex {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 100svh;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-pane {
+    flex: 10 0 35vh;
+    align-self: center;
+}

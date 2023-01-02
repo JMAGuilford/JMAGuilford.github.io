@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "dk" }}">
+
+  {%- capture preloadlink -%}<link rel="preload" as="image" href="{{site.url}}/assets/cecilie-cover.jpg" />{%- endcapture -%}
+
+  {%- include head_redux.html -%}
+
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+  <body>
+
+    {%- include hero-section_redux.html -%}
+
+  </body>
+
+</html>
